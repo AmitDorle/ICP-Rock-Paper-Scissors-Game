@@ -1,8 +1,11 @@
+body{
+   background-color: #b3ffff;
+}
 .title-container
 {
     text-align: center;
     margin: 2px;
-    background-color: rgb(184, 217, 246);
+    background-color: rgb(149, 203, 250);
     color: red;
     font-size: 20px;
 }
@@ -10,7 +13,7 @@
 {
     text-align: center;
     margin-top: 50px;
-    background: -webkit-linear-gradient(rgb(225, 244, 11), rgb(232, 61, 61));
+    background: -webkit-linear-gradient(rgb(244, 15, 11), rgb(16, 16, 247));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -18,7 +21,7 @@
 {
     margin-top: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .img-btn{
     margin: 20px;

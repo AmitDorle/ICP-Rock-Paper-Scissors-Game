@@ -8,7 +8,7 @@
 
 <body>
     <div class="title-container">
-        <h2>Rock Paper Scissors</h2>
+        <h2>Rock Paper Scissors  <img src="./img/rock-paper-scissors.png" height="30px" width="30px"></h2>
     </div>
     <div class="head-container">
         <h1>Let's Play Rock Paper Scissors!!</h1>
@@ -20,7 +20,7 @@
         <button class="img-btn"><img src="./img/scissors.png" class="img">3</button>
     </div>
     <div class="input-container">
-        <input type="text" id="choice" class="input-box">
+        <input type="text" id="choice" class="input-box" maxlength="1">
     </div>
     <div class="submit-btn-container">
         <button onclick="rock()" class="submit-btn">Submit</button>
@@ -29,6 +29,7 @@
 
     <script>
         function rock() {
+
             var a = parseInt(document.getElementById('choice').value);
             if (a == 1) 
             {
