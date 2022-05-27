@@ -31,18 +31,45 @@
     <script>
         function rock() {
 
+            var choices=['rock','paper','scissor'];
+            var b = choices[Math.floor(Math.random()*choices.length)];
+
             var a = parseInt(document.getElementById('choice').value);
-            if (a == 1) 
+            if (a == 1 && b== 'rock') 
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Rock So it's a Tie");
+            }
+            else if (a== 1 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Paper You Loose");
+            }
+            else if (a== 1 && b== 'scissor')
             {
                 document.getElementById('answer').innerHTML = ("Computer Choose Scissor You Win");
             }
-            else if (a==2)
+            else if (a == 2 && b== 'rock') 
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Rock You Win");
+            }
+            else if (a== 2 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Paper So it's a Tie");
+            }
+            else if (a== 2 && b== 'scissor')
             {
                 document.getElementById('answer').innerHTML = ("Computer Choose Scissor You Loose");
             }
-            else
+            else if (a == 3 && b== 'rock') 
             {
                 document.getElementById('answer').innerHTML = ("Computer Choose Rock You Loose");
+            }
+            else if (a== 3 && b== 'paper')
+            {
+                document.getElementById('answer').innerHTML = ("Computer Choose Paper You Win");
+            }
+            else if (a== 3 && b== 'scissor')
+            {
+                document.getElementById('answer').innerHTML = ("Computer And You Both choose Scissor So it's a Tie");
             }
         }
     </script>
